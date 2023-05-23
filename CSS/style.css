@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Local Fonts */
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(../Fonts/Segoe\ UI.woff2);
+    src: url(../Fonts/Segoe\ UI.woff);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Segoe UI-SemiBold";
+    src: url(../Fonts/SegoeUI-SemiBold.woff2);
+    src: url(../Fonts/SegoeUI-SemiBold.woff);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Segoe UI-Regular";
+    src: url(../Fonts/SegoeUI-Regular.woff2);
+    src: url(../Fonts/SegoeUI-Regular.woff);
+    font-weight: 100;
+}
+
+/* Main CSS */
+
+body {
+    font-family: "Segoe UI-SemiBold";
+}
+
+.container__main {
+    margin: 50px 159px;
+}
+
+/* Start Banners Block */
+
+
+.banners {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+
+}
+
+.banners__item {
+    width: 522px;
+    height: 90px;
+    background: #EA580C;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.banners__item.center,
+.banners__item.right {
+    background: #FF8300;
+}
+
+.icon__baners {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EA580C;
+
+}
+
+.left.icon__baners {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    max-width: 348px;
+}
+
+.center__text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    max-width: 420px;
+}
+
+.right__text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    max-width: 265px;
+}
+
+/* End Banners Block */
+
+/* Start Title Block */
+
+.title__name {
+    margin: 20px 0;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.items__ms.titles {
+    margin-bottom: 10px;
+}
+
+.items__ms.titles,
+.items__free.titles {
+    display: flex;
+    align-items: center;
+}
+
+/* End Title Block */
+
+/* Start Affiliate Block */
+
+.CheckBox,
+.radius {
+    margin-right: 8px;
+}
+
+.titles {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3F3F46
+}
+
+.affiliate__inner {
+    margin-top: 40px;
+
+}
+
+.inner__name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #18181B;
+    margin-bottom: 20px;
+}
+
+.inner__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.items__webmaster::before,
+.items__authors::before,
+.items__bloggers::before,
+.items__admins::before,
+.items__publishers::before,
+.items__arbitrators::before {
+    content: url(../Icons/Radius.svg);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -22px;
+
+}
+
+.items__webmaster,
+.items__authors,
+.items__bloggers,
+.items__admins,
+.items__publishers,
+.items__arbitrators {
+    position: relative;
+}
+
+
+.affiliate-text {
+    font-family: 'Segoe UI-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 226px;
+
+
+}
+
+.title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18181B;
+    width: 226px;
+    margin-bottom: 8px;
+
+
+}
+
+.title.long {
+    display: block
+}
+
+.inner__instruction>a {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 8px;
+
+    color: #783CBD;
+    text-decoration: none;
+}
+
+.inner__instruction {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.inner__pass {
+    margin-top: 20px;
+    width: 365px;
+    height: 52px;
+    background: #783CBD;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inner__pass>a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI-Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.enter {
+    width: 365px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Affiliate Block */
+
+/* Popup Start */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.header__popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.enter__type {
+    display: flex;
+    font-family: 'Segoe UI';
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #A1A1AA;
+    margin-bottom: 20px;
+
+
+
+}
+
+.close-popup-mobile {
+    display: none;
+}
+
+.type__tel,
+.type__mail {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E4E4E7;
+    width: 190px;
+    height: 33px;
+}
+
+.type__tel:hover,
+.type__mail:hover {
+    color: #783CBD;
+    cursor: pointer;
+    border-bottom: 3px solid #783CBD;
+}
+
+.tel__input {
+    background: #FFFFFF;
+    border: 2px solid #E4E4E7;
+    border-radius: 8px;
+    width: 380px;
+    height: 44px;
+    padding: 10px;
+}
+
+.instruction__popup {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.Rules__text {
+    font-family: 'Segoe UI-Semibold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #71717A;
+    padding-left: 8px;
+
+    moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+}
+
+.span__hiden {
+    display: none;
+}
+
+.wrapper.mobile {
+    display: none;
+
+}
+
+.myshop {
+    display: none;
+}
+
+
+.enter__popup {
+    font-family: 'Segoe UI-Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 420px;
+    height: 502px;
+    transition: 0.5s all;
+
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-popup {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup button {
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    width: 380px;
+    height: 52px;
+    background: #783CBD;
+    border-radius: 8px;
+    border: none;
+    transition: 0.5s all;
+}
+
+
+/* Popup End */
+
+/*  Start Checkbox */
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.checkbox+label {
+    position: relative;
+    padding: 0 0 0 28px;
+    cursor: pointer;
+}
+
+.checkbox+label:before {
+    content: url(../Icons/CheckboxOn.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 11px;
+    height: 9.5px;
+    transition: .2s;
+}
+
+.checkbox+label:after {
+    content: url(../Icons/CheckboxOff.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 11px;
+    height: 9.5px;
+    transition: .2s;
+    z-index: -1;
+}
+
+.checkbox:checked+label:before {
+
+    display: none;
+}
+
+
+/* End Checkbox */
+
+
+/* Accordion start */
+
+/* .accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+  } */
+
+/* Accordion end */
+
+/* Adaptive */
+
+@media (min-width: 0) and (max-width: 1919px) {
+
+    .container__main {
+        margin: 40px 20px;
+        transition: all 1s;
+    }
+
+    .banners__item {
+        max-width: 522px;
+        height: 88px;
+        transition: 1.5s;
+        padding: 8px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .banners__item.center {
+        margin: 0 20px;
+    }
+
+    .icon__baners,
+    .left.icon__baners {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        transform: rotate(15deg);
+
+
+    }
+
+    .left__text,
+    .center__text,
+    .right__text {
+        max-width: 210px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+}
+
+@media (min-width: 0) and (max-width: 660px) {
+    .banners.section {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 25px;
+        scroll-snap-type: x mandatory;
+        margin-left: 0;
+
+    }
+
+    .banners__item.left.section__item,
+    .banners__item.center.section__item,
+    .banners__item.right.section__item {
+        flex: 0 0 190px;
+        
+        height: 88px;
+        scroll-snap-align: end;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .banners__item.center.section__item {
+        margin: 0 8px;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 512px) {
+
+    .container__main {
+        margin: 10px 20px;
+        transition: all 1s;
+    }
+
+    .inner__pass-open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .inner__pass.enter.wrapper {
+        display: none;
+    }
+
+    .inner__pass.enter.wrapper.mobile {
+        display: block;
+        width: 330px;
+        height: 52px;
+    }
+
+    .a__hiden {
+        display: none;
+    }
+
+    .span__hiden {
+        display: block;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 8px;
+
+        color: #783CBD;
+        text-decoration: none;
+    }
+
+    .a__mobile {
+        display: block;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 4px;
+
+        color: #783CBD;
+        text-decoration: none;
+    }
+
+    .accordion__item {
+        width: 100%;
+
+    }
+
+    .accordion__item:not(.accordion__item_show) .accordion__body {
+
+        display: none;
+
+
+    }
+
+    .items__webmaster::before,
+    .items__authors::before,
+    .items__bloggers::before,
+    .items__admins::before,
+    .items__publishers::before,
+    .items__arbitrators::before {
+        display: none;
+
+    }
+
+    .accordion__header.title::after {
+        content: url(../Icons/ArrowBot.svg);
+        padding-left: 12px;
+
+
+
+
+    }
+
+    .accordion__item_show>.accordion__header.title::after {
+        content: url(../Icons/ArowTop.svg);
+
+    }
+
+
+    .affiliate-text {
+        max-width: 100%;
+
+
+    }
+
+    .inner__items {
+        padding-left: 0;
+    }
+
+
+    .title.long {
+        display: inline;
+    }
+
+    .myshop {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .popup {
+        width: 360px;
+        height: 740px;
+        transition: all 1s;
+    }
+
+    .popup button {
+        max-width: 330px;
+        max-height: 52px;
+    }
+
+    .tel__input {
+        max-width: 330px;
+        max-height: 44px;
+    }
+
+    .popup.active {
+        padding-top: 0;
+    }
+
+
+    .close-popup {
+        display: none;
+    }
+
+    .enter__popup {
+        padding-left: 19px;
+    }
+
+    .header__popup {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .close-popup-mobile {
+        display: block;
+    }
+
+
+
+
+
+}
