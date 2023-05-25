@@ -279,6 +279,12 @@ body {
     align-items: center;
 }
 
+a.a__hiden {
+    padding-left: 9.33px;
+}
+
+
+
 /* End Affiliate Block */
 
 /* Popup Start */
@@ -526,7 +532,7 @@ body {
     }
 
     .banners__item.center {
-        margin: 0 20px;
+        margin: 0 19px;
     }
 
     .icon__baners,
@@ -542,7 +548,7 @@ body {
     .left__text,
     .center__text,
     .right__text {
-        max-width: 210px;
+        max-width: 214px;
         height: 40px;
         font-weight: 400;
         font-size: 14px;
@@ -550,45 +556,55 @@ body {
 
     }
 
+    .title__name {
+        margin-bottom: 10px;
+        width: 256px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .inner__name {
+        width: 443px;
+        height: 22px;
+        font-family: 'Segoe UI-Semibold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+
+        color: #18181B;
+    }
+
+    .affiliate-text {
+        max-width: 210px;
+        max-height: 192px;
+    }
+
+
+
 }
 
-@media (min-width: 0) and (max-width: 660px) {
-    .banners.section {
-        display: flex;
-        justify-content: space-between;
-        overflow-x: auto;
-        width: 100%;
-        margin: 0 25px;
-        scroll-snap-type: x mandatory;
-        margin-left: 0;
+@media (min-width: 0) and (max-width: 768px) {
+
+    .banners__item {
+        max-width: 230px;
+        max-height: 88px;
 
     }
 
-    .banners__item.left.section__item,
-    .banners__item.center.section__item,
-    .banners__item.right.section__item {
-        flex: 0 0 190px;
-        
-        height: 88px;
-        scroll-snap-align: end;
-    }
-
-    ::-webkit-scrollbar {
-        width: 0;
-    }
-
-    .banners__item.center.section__item {
-        margin: 0 8px;
-    }
-
-}
-
-@media (min-width: 0px) and (max-width: 512px) {
-
-    .container__main {
-        margin: 10px 20px;
+    .accordion__body.webmaster__text.affiliate-text {
+        margin-bottom: 20px;
         transition: all 1s;
     }
+
+
+}
+
+@media (min-width: 0px) and (max-width: 706px) {
+
 
     .inner__pass-open {
         display: flex;
@@ -606,6 +622,17 @@ body {
         display: block;
         width: 330px;
         height: 52px;
+    }
+
+    .inner__name {
+        width: 310px;
+        height: 48px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+
     }
 
     .a__hiden {
@@ -640,6 +667,8 @@ body {
 
     .accordion__item {
         width: 100%;
+        padding-bottom: 10px;
+        transition: all 1s;
 
     }
 
@@ -663,7 +692,8 @@ body {
     .accordion__header.title::after {
         content: url(../Icons/ArrowBot.svg);
         padding-left: 12px;
-
+        /* position: absolute;
+        bottom: 1px; */
 
 
 
@@ -671,7 +701,8 @@ body {
 
     .accordion__item_show>.accordion__header.title::after {
         content: url(../Icons/ArowTop.svg);
-
+        /* position: absolute;
+        bottom: 1px; */
     }
 
 
@@ -690,11 +721,7 @@ body {
         display: inline;
     }
 
-    .myshop {
-        display: flex;
-        justify-content: center;
 
-    }
 
     .popup {
         width: 360px;
@@ -712,9 +739,6 @@ body {
         max-height: 44px;
     }
 
-    .popup.active {
-        padding-top: 0;
-    }
 
 
     .close-popup {
@@ -734,8 +758,173 @@ body {
         display: block;
     }
 
+    .affiliate__inner {
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 10px;
+
+    }
 
 
 
+
+    body {
+
+        background: #FAFAFA;
+
+    }
+
+    .banners.section {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 25px;
+        scroll-snap-type: x mandatory;
+        margin-left: 0;
+
+
+
+    }
+
+    .banners__item.left.section__item,
+    .banners__item.center.section__item,
+    .banners__item.right.section__item {
+        flex: 0 0 190px;
+
+        height: 88px;
+        scroll-snap-align: end;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .banners__item.center.section__item {
+        margin: 0 8px;
+
+    }
+
+    .items__ms.titles,
+    .items__free.titles {
+        align-items: baseline;
+    }
+
+    .items__ms.titles,
+    .items__free.titles {
+        display: block;
+        transition: all 1s;
+
+    }
+
+    .CheckBox,
+    .radius {
+        margin-right: 4px;
+       
+    }
+
+}
+
+
+@media (min-width: 0px) and (max-width: 625px) {
+    .title__name {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 360px) {
+
+    .container__main {
+        margin: 0px;
+    }
+
+    .container__mobile {
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .banners.section {
+        margin-left: 15px;
+        margin-top: 10px;
+
+    }
+
+    .title__name {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .myshop {
+        display: flex;
+        justify-content: center;
+        opacity: 100%;
+        transition: 2s;
+
+    }
+
+    .popup.active {
+        padding-top: 0;
+        transition: all 1s;
+    }
+
+
+    .icon__baners,
+    .left.icon__baners {
+        top: 53.5px;
+        transition: all 0.5s;
+    }
+
+    .container__mobile {
+        max-width: 330px;
+    }
+
+
+
+    .left__text,
+    .center__text,
+    .right__text {
+        width: 174px;
+        height: 60px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .inner__name {
+        margin-bottom: 10px;
+    }
+
+    .inner__instruction {
+        margin-top: 10px;
+    
+    }
+
+    .affiliate__inner {
+        margin-top: 20px;
+    }
+
+    .CheckBox,
+    .radius {
+        margin-right: 0px;
+       
+    }
+
+    .span__hiden {
+        padding-left: 9.33px;
+    }
+
+    .a__mobile {
+        padding-left: 0;
+    }
+
+    .enter {
+        width: 330px;
+    }
 
 }
