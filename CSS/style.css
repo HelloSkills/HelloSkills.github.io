@@ -324,6 +324,10 @@ a.a__hiden {
     display: none;
 }
 
+.open-popup.enter {
+    color: white;
+}
+
 .type__tel,
 .type__mail {
     padding-bottom: 5px;
@@ -848,7 +852,7 @@ a.a__hiden {
     }
 
     .banners.section {
-        margin-left: 15px;
+       /* margin-left: 15px; */
         margin-top: 10px;
 
     }
