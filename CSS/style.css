@@ -260,7 +260,7 @@ body {
     text-align: center;
 }
 
-.inner__pass>a {
+.inner__pass > span {
     color: white;
     text-decoration: none;
     font-family: 'Segoe UI-Semibold';
@@ -270,6 +270,11 @@ body {
     line-height: 24px;
 
 }
+
+.inner__pass.enter.wrapper {
+    cursor: pointer;
+}
+
 
 .enter {
     width: 365px;
@@ -322,10 +327,6 @@ a.a__hiden {
 
 .close-popup-mobile {
     display: none;
-}
-
-.open-popup.enter {
-    color: white;
 }
 
 .type__tel,
