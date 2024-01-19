@@ -35,6 +35,7 @@
 	margin: 0;
 	padding: 0;
     transition: 1s;
+
     
 }
 
@@ -112,7 +113,7 @@ margin-top: 7%;
     opacity: 88%;
     color: #000000ef;
     text-decoration: none;
-    margin: 0 40px;
+    margin: 0 10px;
 }
 
 
@@ -156,6 +157,7 @@ footer {
     align-items: center;
     flex-direction: column;
     transition: 1s ease;
+    padding: 20px;
   
 
 }
@@ -171,9 +173,9 @@ footer {
     }
 
     .token {
-       font-size: 10px;
-    font-weight: 700;
-    white-space: nowrap;
+        font-size: 10px;
+        font-weight: 700;
+        white-space: nowrap;
     }
   
     h1 {
