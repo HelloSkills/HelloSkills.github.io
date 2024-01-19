@@ -167,6 +167,9 @@ footer {
 
 @media (min-width: 566px) and (max-width: 900px) {
     body {
+	    background: url(/IMG/backmobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
         transition: 1s;
       
     }
