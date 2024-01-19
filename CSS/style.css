@@ -171,8 +171,9 @@ footer {
     }
 
     .token {
-        font-size: 12px;
-        font-weight: 700;
+       font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
     }
   
     h1 {
