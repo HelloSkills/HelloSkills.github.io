@@ -1,5 +1,11 @@
 /* Global CSS */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
 	font-family: raleway_c;
 	src: url(../Fonts/raleway-v22-cyrillic-300.woff2);
@@ -191,7 +197,7 @@ span {
 	border-radius: 50%;
 	position: absolute;
 	padding: 5px;
-	left: -2px;
+	left: 3px;
 	bottom: 13px;
 	border-radius: 50%;
 }
