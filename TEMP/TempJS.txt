@@ -1,0 +1,14 @@
+document.body.onclick = (event)=> {
+    const elem = event.target;
+    if (elem.classList.contains('token')) {
+        console.log(elem); 
+        navigator.clipboard.writeText('referal')
+    }
+
+    if (elem.classList.contains('token')) {
+        const tooltip = document.getElementById("token");
+        tooltip.innerHTML = "Copied to clipboard!";
+    }
+    
+
+}
